@@ -84,9 +84,9 @@ input:focus{border-color:var(--pink)}
 <section class="page active" id="p1">
 <div class="eyebrow">A TINY SURPRISE FOR YOU</div><span class="big-sticker">💌</span>
 <h1>Halo, Kakak Manis kesayangan akuu!</h1>
-<p>Admin datang bawa sesuatu nihh.<br>Jangan kabur dulu, yaa.</p>
-<p class="soft">Ada kejutan kecil yang disiapkan khusus buat kakak.</p>
-<div class="actions"><button onclick="go(2);startMusic()">Buka amplopnya kak 💗</button></div>
+<p>Admin datang bawa sesuatu nihh.<br>bukan apa-apa tapi semoga bikin kakak seneng.</p>
+<p class="soft"> ini kejutan kecil yang disiapkan khusus buat kakak.</p>
+<div class="actions"><button onclick="go(2);startMusic()">Buka amplopnya ya sayang 💗</button></div>
 </section>
 
 <section class="page" id="p2">
@@ -101,7 +101,7 @@ input:focus{border-color:var(--pink)}
 <p class="soft">clue: tahun spesial Kakak.</p>
 <input id="code" type="password" inputmode="numeric" maxlength="4" placeholder="••••" aria-label="Kode tahun lahir">
 <div class="error" id="error"></div>
-<div class="actions"><button onclick="checkCode()">Buka kunci 🔓</button><button class="secondary" onclick="go(2)">Kembali</button></div>
+<div class="actions"><button onclick="checkCode(2005)">Buka kunci 🔓</button><button class="secondary" onclick="go(2)">Kembali</button></div>
 </section>
 
 <section class="page" id="p4">
@@ -119,8 +119,8 @@ input:focus{border-color:var(--pink)}
 
 <section class="page" id="p6">
 <div class="sticker-row"><div class="bear white sad"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div><div class="bear brown pat dudu"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Dudu</span></div></div>
-<h2>Kalau kakak lagi sedih...</h2><p>ada Admin yang selalu ada digarda terdepan untuk kakak</p><p>dan Admin yang pengin bilang: kakak nggak harus kuat terus, ya.</p>
-<div class="actions"><button onclick="go(7)">Kasih pelukan virtual 🤗</button></div>
+<h2>Kalau kakak lagi sedih...</h2><p>ada Admin yang selalu ada digarda terdepan untuk kakak</p><p>dan Admin pengin bilang kalau kakak nggak harus kuat terus, ya.</p>
+<div class="actions"><button onclick="go(7)">Aku Peluk Virtual ya..🤗</button></div>
 </section>
 
 <section class="page" id="p7">
@@ -170,7 +170,7 @@ function go(n){
  document.getElementById('bar').style.width=(page/11*100)+'%';
  window.scrollTo({top:0,behavior:'smooth'});
 }
-function checkCode(){
+function checkCode(2005){
  const value=document.getElementById('code').value;
  const err=document.getElementById('error');
  if(value==='2005'){err.textContent='';go(4)}

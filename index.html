@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe5ef">
+<title>Untuk Kakak Farhan 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap');
+:root{--pink:#e88caf;--deep:#b85e85;--pale:#fff0f6;--ink:#854a68}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:linear-gradient(145deg,#ffd4e3,#fff0f6 48%,#f5d9f4);overflow-x:hidden}
+button,input{font:inherit}
+#floaties{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.floaty{position:absolute;top:-40px;opacity:.72;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.shell{position:relative;z-index:1;min-height:100vh;display:grid;place-items:center;padding:22px 14px 78px}
+.card{width:min(100%,470px);min-height:560px;padding:26px 22px 22px;background:rgba(255,255,255,.94);border:3px solid white;border-radius:30px;box-shadow:0 18px 55px #b65f8730;text-align:center;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:8px;border:1px dashed #f2bfd3;border-radius:22px;pointer-events:none}
+.content{position:relative;z-index:1}
+.page{display:none;animation:arrive .45s ease both}
+.page.active{display:block}
+@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{font-size:11px;letter-spacing:2px;font-weight:900;color:#c47b9b;margin:8px 0 13px}
+h1{font:30px/1.35 Pacifico,cursive;color:#d66e99;margin:13px 0}
+h2{font-size:21px;line-height:1.4;color:#cc6a95;margin:14px 0}
+p{font-size:15px;line-height:1.85;margin:10px 0}
+.soft{color:#b17b94;font-size:13px}
+button{border:0;border-radius:30px;padding:13px 19px;background:var(--pink);color:white;font-weight:900;box-shadow:0 6px 16px #e88caf40;cursor:pointer;transition:transform .18s,background .18s;margin:5px 3px}
+button:hover{transform:translateY(-2px);background:#d8759f}
+button.secondary{background:#fff0f6;color:#b65d83;box-shadow:none;border:1px solid #f6cddd}
+button:active{transform:scale(.97)}
+.actions{margin-top:22px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
+.progress{height:5px;background:#fbe2ec;border-radius:9px;margin:0 3px 20px;overflow:hidden}
+#bar{height:100%;width:10%;background:#e88caf;border-radius:9px;transition:width .3s}
+input{width:100%;max-width:230px;padding:14px;border:2px solid #f2c4d6;border-radius:15px;text-align:center;letter-spacing:8px;font-size:23px;color:#a75078;outline:none;margin:12px 0}
+input:focus{border-color:var(--pink)}
+.error{min-height:22px;font-size:13px;color:#cf5787}
+.note{background:#fff0f6;border:1px solid #f9d9e6;border-radius:19px;padding:17px;text-align:left;margin:16px 0;line-height:1.9}
+.note p{margin:7px 0}
+.signature{text-align:right;color:#d16f98;font-weight:900}
+.sticker-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:18px 0}
+.bear{width:126px;height:138px;position:relative;display:grid;place-items:center;animation:bob 2.5s ease-in-out infinite;transform-origin:bottom center}
+.bear.dudu{animation-delay:.4s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+.ear{position:absolute;top:14px;width:39px;height:39px;border-radius:50%;background:var(--fur);border:2px solid var(--line)}
+.ear.left{left:14px}.ear.right{right:14px}
+.ear:after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--inner)}
+.head{position:absolute;top:27px;width:104px;height:94px;border-radius:48% 48% 45% 45%;background:var(--fur);border:2px solid var(--line);box-shadow:inset 0 -4px 0 #00000008}
+.bear.white{--fur:#fffaf8;--line:#e9d8d4;--inner:#f6d5df;--muzzle:#fff0e8}
+.bear.brown{--fur:#b77b59;--line:#986044;--inner:#d9a08a;--muzzle:#f7d6c3}
+.eye{position:absolute;top:37px;width:7px;height:9px;border-radius:50%;background:#62464a}
+.eye.left{left:27px}.eye.right{right:27px}
+.blush{position:absolute;top:49px;width:19px;height:10px;border-radius:50%;background:#f4a9bd;opacity:.8}
+.blush.left{left:9px}.blush.right{right:9px}
+.muzzle{position:absolute;top:49px;left:35px;width:32px;height:24px;border-radius:50%;background:var(--muzzle)}
+.nose{position:absolute;top:5px;left:12px;width:8px;height:6px;border-radius:50%;background:#6b4b4b}
+.mouth{position:absolute;top:12px;left:12px;width:9px;height:6px;border-bottom:2px solid #6b4b4b;border-radius:50%}
+.bear-label{position:absolute;bottom:0;background:#fff0f6;border-radius:20px;padding:4px 13px;font-size:12px;font-weight:900;color:#b65d83}
+.bear.sad .eye{height:6px;top:41px}
+.bear.sad .mouth{top:14px;border-bottom:0;border-top:2px solid #6b4b4b}
+.bear.sad:after{content:"💧";position:absolute;top:48px;right:16px;font-size:17px;animation:tear 1s infinite}
+@keyframes tear{50%{transform:translateY(7px);opacity:.5}}
+.bear.pat{animation:pat .6s ease-in-out infinite alternate}
+@keyframes pat{to{transform:rotate(8deg) translateY(-4px)}}
+.bear.hug{animation:hug .7s ease-in-out infinite alternate}
+@keyframes hug{to{transform:scale(1.07) rotate(4deg)}}
+.bear.hug .head{transform:scaleX(1.06)}
+.bear.happy .mouth{border-bottom:3px solid #6b4b4b;width:13px}
+.big-sticker{font-size:60px;display:block;margin:15px auto;animation:bob 2s infinite}
+.music{position:fixed;z-index:5;right:14px;bottom:14px;background:#fff;color:#b65d83;border:1px solid #f6d3e1;box-shadow:0 5px 20px #b65f8725}
+.footer{font-size:11px;color:#c58aa4;margin-top:19px}
+@media(max-width:380px){.card{padding:22px 15px;min-height:540px}h1{font-size:26px}.bear{transform:scale(.88);margin:0 -5px}.sticker-row{gap:2px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="floaties"></div>
+<audio id="music" loop preload="auto"><source src="masa.mp3" type="audio/mpeg"></audio>
+<button class="music" id="musicBtn" onclick="toggleMusic()">♫ Putar lagu</button>
+<main class="shell"><section class="card"><div class="content">
+<div class="progress"><div id="bar"></div></div>
+
+<section class="page active" id="p1">
+<div class="eyebrow">A TINY SURPRISE FOR YOU</div><span class="big-sticker">💌</span>
+<h1>Halo, Kakak Manis!</h1>
+<p>Admin datang bawa sesuatu nihh.<br>Jangan kabur dulu, yaa.</p>
+<p class="soft">Ada kejutan kecil yang disiapkan khusus buat kakak.</p>
+<div class="actions"><button onclick="go(2);startMusic()">Buka amplopnya 💗</button></div>
+</section>
+
+<section class="page" id="p2">
+<div class="sticker-row"><div class="bear white happy"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div><div class="bear brown happy dudu"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Dudu</span></div></div>
+<h1>Halo, Kakak Manis!</h1><p>Bubu sama Dudu juga mau nyapa kakak.</p><p>Katanya, kakak harus senyum dulu sebelum lanjut. Senyum tipis juga dihitung kok 😚</p>
+<div class="actions"><button onclick="go(3)">Aku udah senyum →</button></div>
+</section>
+
+<section class="page" id="p3">
+<span class="big-sticker">🔐</span><h2>Eh, tapi tunggu dulu...</h2>
+<p>Kalau mau masuk ke kejutan berikutnya, kakak harus buka kunci rahasia.</p>
+<p class="soft">Petunjuk: tahun kelahiran Kakak Farhan.</p>
+<input id="code" type="password" inputmode="numeric" maxlength="4" placeholder="••••" aria-label="Kode tahun lahir">
+<div class="error" id="error"></div>
+<div class="actions"><button onclick="checkCode()">Buka kunci 🔓</button><button class="secondary" onclick="go(2)">Kembali</button></div>
+</section>
+
+<section class="page" id="p4">
+<span class="big-sticker">🎉</span><h1>YEAAY, BERHASIL!</h1>
+<p>Kakak masih ingat tahun lahir sendiri. Admin banggaaa.</p>
+<p>Bubu sama Dudu juga ikut tepuk tangan. *plok plok plok* 👏</p>
+<div class="actions"><button onclick="go(5)">Lanjut, Admin penasaran →</button></div>
+</section>
+
+<section class="page" id="p5">
+<div class="sticker-row"><div class="bear white"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div></div>
+<h1>Hari ini hari apa hayo?</h1><p>Hari biasa aja, atau ada seseorang yang ulang tahun dan harus dirayakan?</p>
+<div class="actions"><button onclick="go(6)">Hari biasa aja 🤔</button><button onclick="go(6)">Hari spesial kakak! 🎂</button></div>
+</section>
+
+<section class="page" id="p6">
+<div class="sticker-row"><div class="bear white sad"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div><div class="bear brown pat dudu"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Dudu</span></div></div>
+<h2>Kalau kakak lagi sedih...</h2><p>Bubu lagi sedih, terus Dudu nepuk-nepuk kepalanya pelan-pelan.</p><p>Kayak Admin yang pengin bilang: kakak nggak harus kuat terus, ya.</p>
+<div class="actions"><button onclick="go(7)">Kasih pelukan virtual 🤗</button></div>
+</section>
+
+<section class="page" id="p7">
+<div class="sticker-row"><div class="bear white hug"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div><div class="bear brown hug dudu"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Dudu</span></div></div>
+<h1>Peluk jauhh buat kakak!</h1><p>Kalau hari ini terasa berat, istirahat dulu, ya. Kakak nggak harus menyelesaikan semuanya sekaligus.</p><p>Admin mungkin nggak selalu bisa ada tepat di samping kakak, tapi Admin selalu mau dengerin dan nemenin sebisanya.</p>
+<div class="actions"><button onclick="go(8)">Admin punya pesan lagi →</button></div>
+</section>
+
+<section class="page" id="p8">
+<span class="big-sticker">🧸💌</span><h1>Pesan dari bocil tengil</h1>
+<div class="note"><p>Bocil tengil ini punya cara sendiri untuk merayakan kebahagiaannya kakak.</p><p>Mungkin caranya sederhana, mungkin juga bikin kakak geleng-geleng kepala. Tapi semuanya dibuat dengan hati yang tulus.</p><p>Jadi kalau kakak lagi sedih, jangan merasa sendirian, ya. Ada Admin yang pengin kakak punya tempat buat cerita, ketawa, atau sekadar diem bareng.</p></div>
+<div class="actions"><button onclick="go(9)">Masih ada satu kejutan →</button></div>
+</section>
+
+<section class="page" id="p9">
+<span class="big-sticker">🎁</span><h1>Hadiah kecil buat Kakak Manis</h1>
+<p>Hadiah Admin mungkin nggak bisa dibungkus pita, tapi isinya doa yang banyak banget.</p>
+<p>Semoga kakak sehat, hatinya tenang, langkahnya dimudahkan, dan selalu dikelilingi orang-orang yang tulus menyayangi kakak.</p>
+<div class="actions"><button onclick="go(10)">Buka hadiah terakhir 🎀</button></div>
+</section>
+
+<section class="page" id="p10">
+<div class="sticker-row"><div class="bear white happy"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Bubu</span></div><div class="bear brown happy dudu"><i class="ear left"></i><i class="ear right"></i><i class="head"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><i class="muzzle"><i class="nose"></i><i class="mouth"></i></i></i><span class="bear-label">Dudu</span></div></div>
+<h1>Happy Birthday,<br>Kakak Farhan!</h1><p class="soft">20 Desember 2005 — hari lahir seseorang yang istimewa.</p>
+<div class="note"><p>Selamat ulang tahun, Kakak Farhan! 🎂</p><p>Semoga di umur yang baru ini, kakak selalu diberi kesehatan, kebahagiaan, dan kemudahan dalam setiap langkahnya. Semoga semua doa yang kakak simpan diam-diam satu per satu menjadi nyata.</p><p>Terima kasih sudah hadir dan jadi seseorang yang begitu berarti buat Admin. Semoga kakak selalu punya alasan untuk tersenyum, bahkan di hari yang berat sekalipun.</p><p>Kalau suatu hari kakak capek, sedih, atau ngerasa semuanya terlalu ramai, semoga kakak ingat bahwa kakak boleh istirahat. Nggak harus selalu terlihat kuat. Admin mau dengerin, nemenin, dan mendoakan kakak sebisanya.</p><p>Dari Admin yang kadang tengil, kadang manja, tapi selalu punya cara sendiri buat menyayangi Kakak Farhan.</p><p class="signature">Aku sayang kakak. Selamat bertambah usia, Kakak Manis. ♡</p></div>
+<div class="actions"><button onclick="go(11)">Satu pesan terakhir 💗</button></div>
+</section>
+
+<section class="page" id="p11">
+<span class="big-sticker">💞</span><h1>Untuk Kakak Manis</h1>
+<p>Semoga masa ini, nanti, dan masa indah lainnya selalu punya tempat untuk kakak.</p>
+<p>Terima kasih sudah jadi bagian dari cerita kecil Admin.</p>
+<p>Jaga diri baik-baik, ya. Kalau sedih, boleh cerita. Kalau bahagia, Admin juga mau ikut senang.</p>
+<p class="signature">With love,<br>Admin yang sayang Kakak Farhan ♡</p>
+<div class="actions"><button onclick="go(1)">Ulangi kejutan ↻</button></div>
+</section>
+
+<div class="footer">dibuat dengan banyak doa, sedikit tengil, dan sayang yang tulus ♡</div>
+</div></section></main>
+
+<script>
+let page=1;
+function go(n){
+ document.getElementById('p'+page).classList.remove('active');
+ page=n;
+ document.getElementById('p'+page).classList.add('active');
+ document.getElementById('bar').style.width=(page/11*100)+'%';
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function checkCode(){
+ const value=document.getElementById('code').value;
+ const err=document.getElementById('error');
+ if(value==='2005'){err.textContent='';go(4)}
+ else{err.textContent='Eits, belum tepat! Coba ingat lagi tahun lahir Kakak Farhan 😝'}
+}
+const audio=document.getElementById('music');
+function startMusic(){audio.play().then(()=>document.getElementById('musicBtn').textContent='⏸ Jeda lagu').catch(()=>{})}
+function toggleMusic(){
+ if(audio.paused){audio.play().then(()=>document.getElementById('musicBtn').textContent='⏸ Jeda lagu').catch(()=>{})}
+ else{audio.pause();document.getElementById('musicBtn').textContent='♫ Putar lagu'}
+}
+const bg=document.getElementById('floaties');
+for(let i=0;i<32;i++){
+ const el=document.createElement('span');el.className='floaty';
+ el.textContent=['♡','💗','💕','✧'][Math.floor(Math.random()*4)];
+ el.style.left=Math.random()*100+'%';el.style.fontSize=(12+Math.random()*19)+'px';
+ el.style.animationDuration=(7+Math.random()*10)+'s';el.style.animationDelay=(-Math.random()*15)+'s';
+ bg.appendChild(el);
+}
+</script>
+</body>
+</html>
